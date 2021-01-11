@@ -16,8 +16,8 @@ else { echo "not connected";
  $contact = $_POST['contact'];
  $comment = $_POST['comment'];
 
- $query = "insert into website_test (username, email, contact, comment)
- values ('$username', '$email', '$contact' ,'$comment')";
+ $query = "insert into user_info (username, email, contact, comment)
+ values ('$username', '$email', '$contact', '$comment')";
 
  mysqli_query($con, $query);
 
